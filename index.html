@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title> HTML Academy: Седона </title>
   </head>
   <body>
 
   <!-- Шапка сайта -->
   <header class="page-header">
-    <a> <img src="img/logo.png"> </a>
+    <a> <img src="img/logo.png" alt="Логотип" width="133" height="67"> </a>
     <nav>
       <ul class="header-nav-list">
         <li> <a href="#"> Информация </a></li>
@@ -24,7 +24,7 @@
 
     <!-- Раздел главной страницы Intro -->
     <section class="intro">
-      <img src="img/intro.png">
+      <img src="img/intro.png" alt="Главное фото Седоны" width="458" height="352">
     </section>
 
     <!-- Раздел главной страницы Content -->
@@ -38,7 +38,7 @@
           <span> №1 </span>
           <p> Седона - не аттракцион для туристов, там течет своя жизнь </p>
         </div>
-        <img src="img/reason1.jpg">
+        <img src="img/reason1.jpg" alt="Фото Седоны" width="800" height="400">
       </div>
 
       <ul class="info-list">
@@ -57,7 +57,7 @@
       </ul>
 
       <div class="reason">
-        <img src="img/reason2.jpg">
+        <img src="img/reason2.jpg" alt="Фото Седоны" width="800" height="400">
         <div class="reason-info">
           <h3> Там есть мост дьявола </h3>
           <span> №2 </span>
@@ -93,9 +93,8 @@
 
     <!-- Раздел главной страницы Map -->
     <div class="map">
-      <iframe src="#"></iframe>
+      <iframe src=""></iframe>
     </div>
-
 
   </main>
 
@@ -104,13 +103,13 @@
     <a href="#"> #visitsedona </a>
     <ul class="social">
       <li class="social-icons">
-        <a href="#" class="twitter"> Twitter </a>
+        <a href="#" class="twitter"> <span class="visually-hidden"> Twitter </span> </a>
       </li>
       <li class="social-icons">
-        <a href="#" class="facebook"> Facebook </a>
+        <a href="#" class="facebook"> <span class="visually-hidden"> Facebook </span> </a>
       </li>
       <li class="social-icons">
-        <a href="#" class="youtube"> Youtube </a>
+        <a href="#" class="youtube"> <span class="visually-hidden"> Youtube </span> </a>
       </li>
     </ul>
     <a href="http://htmlacademy.ru" class="website-by"> Website By
@@ -118,8 +117,29 @@
     </a>
   </footer>
 
-  <section class="search-form">
-    <!-- Будет форма -->
+  <!-- Форма поиска гостиницы -->
+  <section class="modal-search">
+    <form class="modal-search-form" method="get" action="https://echo.htmlacademy.ru">
+      <label> Дата заезда:
+        <input type="text" placeholder="24 апреля 2017">
+      </label>
+      <label> Дата выезда:
+        <input type="text" placeholder="4 июля 2017">
+      </label>
+      <div class="amount-of-people">
+        <label> Взрослые:
+          <button class="counter-plus" type="button"></button>
+          <input type="text">
+          <button class="counter-minus" type="button"></button>
+        </label>
+        <label> Дети:
+          <button class="counter-plus" type="button"></button>
+          <input type="text">
+          <button class="counter-minus" type="button"></button>
+        </label>
+      </div>
+      <button class="search-form-button" type="submit"> Найти </button>
+    </form>
   </section>
 
   </body>
